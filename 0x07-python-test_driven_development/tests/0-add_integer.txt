@@ -1,0 +1,58 @@
+# 0-add_integer.txt
+How to use 0-add_integer.py
+This library is very simple, since it only has one function called "add_integer".
+Numbers
+"add integer" returns the sum of its arguments. For integers or floats, that value is equivalent to using the "+" operator.
+::
+>>>add_integer = __import__('0-add_integer').add_integer
+>>>add_integer(2, 3)
+5
+>>>add_integer(-3, 10)
+7
+>>>add_integer(40, -5)
+35
+>>>add_integer(-40, -5)
+-45
+It also works with floating-point values.
+::
+>>>add_integer(2.0, 3)
+5
+Non numbers
+Raise error message in case that one of the variables are not integers or floats
+::
+>>>add_integer('a', 3)
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+>>>add_integer("Holberton", 2)
+Traceback (most recent call last):
+TypeError: b must be an integer)
+
+>>>add_integer(9, "School")
+Traceback (most recent call last):
+TypeError: b must be an integer
+
+>>>add_integer(100, 'G')
+Traceback (most recent call last)
+TypeError: b must be an integer)
+
+add_integer(float(2**1023), float(2**1023))
+Traceback (most recent call last)
+OverflowError: overflow error
+
+>>>add_integer()
+Traceback (most recent call last)
+TypeError: add_integer() missing 1 required positional argument: 'a'
+
+>>>add_integer(none)
+Traceback (most recent call last)
+TypeError: a must be an integer
+
+>>>add_integer('Freddie', 'Mercury')
+Traceback: (most recent call last):
+TypeError: a must be an integer
+
+>>> add_integer (4)
+102
+
+
