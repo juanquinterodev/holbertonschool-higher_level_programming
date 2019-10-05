@@ -1,0 +1,61 @@
+# text_indentation.txt
+
+ How to Use text_indentation.py
+===============================
+
+Only handles one function called
+``text_indentation()``.
+
+Strings
+=======
+
+``text_indentation()``
+
+::
+
+    >>> text_indentation = __import__('5-text_indentation').text_indentation
+    >>> text_indentation("Hello")
+    Hello
+    <BLANKLINE>
+    >>> text_indentation('Z')
+    Z
+    >>> text_indentation('?')
+    ?
+    <BLANKLINE>
+
+    >>> text_indentation(':')
+    :
+    <BLANKLINE>
+
+    >>> text_indentation('.')
+    .
+    <BLANKLINE>
+
+    >>> text_indentation('.?::?.')
+    .
+    <BLANKLINE>
+    ?
+    <BLANKLINE>
+    :
+    <BLANKLINE>
+    :
+    <BLANKLINE>
+    ?
+    <BLANKLINE>
+    .
+    <BLANKLINE>
+
+Numbers
+========
+
+Raise error message in differents cases
+
+::
+
+    >>> text_indentation(206)
+    Traceback (most recent call last):
+    TypeError: text must be a string
+
+    >>> text_indentation()
+    Traceback (most recent call last):
+    TypeError: text_indentation() missing 1 required

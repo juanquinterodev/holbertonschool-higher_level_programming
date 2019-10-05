@@ -5,54 +5,54 @@ Numbers
 "add integer" returns the sum of its arguments. For integers or floats, that value is equivalent to using the "+" operator.
 ::
 >>>add_integer = __import__('0-add_integer').add_integer
->>>add_integer(2, 3)
-5
->>>add_integer(-3, 10)
-7
->>>add_integer(40, -5)
-35
->>>add_integer(-40, -5)
--45
+>>>add_integer(1, 2)
+3
+>>>add_integer(-2, 8)
+6
+>>>add_integer(25, -5)
+20
+>>>add_integer(-20, -5)
+-25
 It also works with floating-point values.
 ::
->>>add_integer(2.0, 3)
-5
+>>>add_integer(3.0, 3)
+6
 Non numbers
 Raise error message in case that one of the variables are not integers or floats
 ::
->>>add_integer('a', 3)
+>>>add_integer('g', 8)
 Traceback (most recent call last):
 TypeError: a must be an integer
 
->>>add_integer("Holberton", 2)
+>>>add_integer("Hello", 6)
 Traceback (most recent call last):
-TypeError: b must be an integer)
+TypeError: a must be an integer)
 
->>>add_integer(9, "School")
+>>>add_integer(4, "world")
 Traceback (most recent call last):
 TypeError: b must be an integer
 
->>>add_integer(100, 'G')
+>>>add_integer(80, 'H')
 Traceback (most recent call last)
 TypeError: b must be an integer)
 
-add_integer(float(2**1023), float(2**1023))
+add_integer(float(2**1240), float(2**1240))
 Traceback (most recent call last)
 OverflowError: overflow error
 
 >>>add_integer()
 Traceback (most recent call last)
-TypeError: add_integer() missing 1 required positional argument: 'a'
+TypeError: add_integer() missing 1 required argument: 'a'
 
 >>>add_integer(none)
 Traceback (most recent call last)
 TypeError: a must be an integer
 
->>>add_integer('Freddie', 'Mercury')
+>>>add_integer('Michael', 'Jackson')
 Traceback: (most recent call last):
 TypeError: a must be an integer
 
->>> add_integer (4)
-102
+>>> add_integer (1)
+99
 
 
