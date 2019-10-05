@@ -36,10 +36,6 @@ TypeError: b must be an integer
 Traceback (most recent call last)
 TypeError: b must be an integer)
 
-add_integer(float(2**1240), float(2**1240))
-Traceback (most recent call last)
-OverflowError: overflow error
-
 >>>add_integer()
 Traceback (most recent call last)
 TypeError: add_integer() missing 1 required argument: 'a'
