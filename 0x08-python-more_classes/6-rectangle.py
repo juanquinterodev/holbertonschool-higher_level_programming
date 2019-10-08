@@ -73,7 +73,7 @@ class Rectangle:
         tmp = ""
         for i in range(self.__height):
             if self.__width <= 0:
-                aux = " \n"
+                tmp = " \n"
                 break
             tmp = "{}{}\n".format(tmp, str(self.print_symbol) * self.__width)
         return tmp[:-1]

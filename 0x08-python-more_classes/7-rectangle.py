@@ -5,6 +5,7 @@ Rectangle Class
 
 
 class Rectangle:
+
     number_of_instances = 0
     print_symbol = "#"
 
@@ -14,6 +15,7 @@ class Rectangle:
         """
         self.width = width
         self.height = height
+        type(self).number_of_instances += 1
 
     @property
     def width(self):
@@ -71,6 +73,9 @@ class Rectangle:
         """
         tmp = ""
         for i in range(self.__height):
+            if self.__width <= 0:
+                tmp = " \n"
+                break
             tmp = "{}{}\n".format(tmp, str(self.print_symbol) * self.__width)
         return tmp[:-1]
 
