@@ -2,8 +2,6 @@
 """
 Rectangle Class
 """
-
-
 class Rectangle:
     """
     Rectangle class
