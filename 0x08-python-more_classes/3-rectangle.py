@@ -30,7 +30,7 @@ class Rectangle:
     @width.setter
     def width(self, value):
         """
-        setter of width
+        setter width
         """
         if type(value) is not int:
             raise TypeError("width must be an integer")
@@ -61,7 +61,7 @@ class Rectangle:
         """
         if (self.__height == 0 or self.width == 0):
             return 0
-        return 2 * self.__height + 2 * self.__width
+        return 2 * self.__height + 2 * self.width
 
     def __str__(self):
         """
