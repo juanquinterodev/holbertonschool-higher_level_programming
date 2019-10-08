@@ -5,7 +5,9 @@ Rectangle Class
 
 
 class Rectangle:
-
+    """
+    Rectangle class
+    """
     number_of_instances = 0
     print_symbol = "#"
 
