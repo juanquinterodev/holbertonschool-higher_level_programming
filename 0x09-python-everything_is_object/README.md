@@ -1,0 +1,2 @@
+about everything  is object
+
