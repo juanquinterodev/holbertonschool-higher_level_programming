@@ -1,54 +1,155 @@
-# 0-add_integer.txt
-How to use 0-add_integer.py
-This library is very simple, since it only has one function called "add_integer".
-Numbers
-"add integer" returns the sum of its arguments. For integers or floats, that value is equivalent to using the "+" operator.
-::
->>>add_integer = __import__('0-add_integer').add_integer
->>>add_integer(1, 2)
-3
->>>add_integer(-2, 8)
-6
->>>add_integer(25, -5)
-20
->>>add_integer(-20, -5)
--25
-It also works with floating-point values.
-::
->>>add_integer(3.0, 3)
-6
-Non numbers
-Raise error message in case that one of the variables are not integers or floats
-::
->>>add_integer('g', 8)
-Traceback (most recent call last):
-TypeError: a must be an integer
+The ``0-add_integer.py`` module
+===============================
 
->>>add_integer("Hello", 6)
-Traceback (most recent call last):
-TypeError: a must be an integer)
+Using ``add_integer`` function
+------------------------------
 
->>>add_integer(4, "world")
-Traceback (most recent call last):
-TypeError: b must be an integer
+    >>> add_integer = __import__('0-add_integer').add_integer
 
->>>add_integer(80, 'H')
-Traceback (most recent call last)
-TypeError: b must be an integer)
+Use it:
 
->>>add_integer()
-Traceback (most recent call last)
-TypeError: add_integer() missing 1 required argument: 'a'
+    1. sum of two integers
 
->>>add_integer(none)
-Traceback (most recent call last)
-TypeError: a must be an integer
+        >>> add_integer(6, 3)
+        9
 
->>>add_integer('Michael', 'Jackson')
-Traceback: (most recent call last):
-TypeError: a must be an integer
+    2. sum of an integer and a negative integer
 
->>> add_integer (1)
-99
+        >>> add_integer(100, -9)
+        91
 
+    3. sum of two negative integers
 
+        >>> add_integer(-5, -5)
+        -10
+
+    4. sum of an integer and a float
+
+        >>> add_integer(3, 3.0647)
+        6
+
+    5. sum of a negative integer and a float
+
+        >>> add_integer(-7, 2.357)
+        -5
+
+    6. sum of an integer and a negative float
+
+        >>> add_integer(2, -5.5645)
+        -3
+
+    7. sum of two floats
+
+        >>> add_integer(2.4545, 4.67234)
+        6
+
+    8. sum of a float and a negative float
+
+        >>> add_integer(5.644, -24.3432)
+        -19
+
+    9. sum of two negative floats
+
+        >>> add_integer(-34.667, -6.232)
+        -40
+
+    10. sum only an integer
+
+        >>> add_integer(20)
+        118
+
+    11. sum only a float
+
+        >>> add_integer(34.564556)
+        132
+
+    12. without any parameters
+
+        >>> add_integer()
+        Traceback (most recent call last):
+        ...
+        TypeError: add_integer() missing 1 required positional argument: 'a'
+
+    13. sum only a string
+
+        >>> add_integer('hola')
+        Traceback (most recent call last):
+        ...
+        TypeError: a must be an integer
+
+    14. sum of an integer with a string
+
+        >>> add_integer(5, '5')
+        Traceback (most recent call last):
+        ...
+        TypeError: b must be an integer
+
+    15. sum of two string
+
+        >>> add_integer('hola', 'chao')
+        Traceback (most recent call last):
+        ...
+        TypeError: a must be an integer
+
+    16. sum only a None
+
+        >>> add_integer(None)
+        Traceback (most recent call last):
+        ...
+        TypeError: a must be an integer
+
+    17. sum of an integer with a None
+
+        >>> add_integer(7, None)
+        Traceback (most recent call last):
+        ...
+        TypeError: b must be an integer
+
+    18. sum of a 'name' with a None
+
+        >>> add_integer(hola, None)
+        Traceback (most recent call last):
+        ...
+        NameError: name 'hola' is not defined
+
+    19. sum only a dict
+
+        >>> add_integer({'manzana': 1})
+        Traceback (most recent call last):
+        ...
+        TypeError: a must be an integer
+
+    20. sum only a tuple
+
+        >>> add_integer((1, 2, 3, 4), 5)
+        Traceback (most recent call last):
+        ...
+        TypeError: a must be an integer
+
+    21. sum only a list
+
+        >>> add_integer([5, 6, 7], 8)
+        Traceback (most recent call last):
+        ...
+        TypeError: a must be an integer
+
+    22. sum only a set
+
+        >>> add_integer({3, 5, 8}, 10)
+        Traceback (most recent call last):
+        ...
+        TypeError: a must be an integer
+        
+    23. sum float inf
+    
+        >>> add_integer(float('inf'))
+        Traceback (most recent call last):
+        ...
+        OverflowError: cannot convert float infinity to integer
+        
+    24. sum float NaN
+    
+        >>> add_integer(float('nan'))
+        Traceback (most recent call last):
+        ...
+        ValueError: cannot convert float NaN to integer
