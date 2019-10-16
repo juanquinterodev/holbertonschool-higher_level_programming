@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+
+
 class MyInt(int):
 
     def __init__(self, value):
@@ -8,6 +10,5 @@ class MyInt(int):
     def __eq__(self, x):
         return self.value != x
 
-    def __neg__(self, x):
+    def __ne__(self, x):
         return not self == x
-
