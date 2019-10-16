@@ -9,4 +9,5 @@ class MyInt(int):
         return self.value != x
 
     def __neg__(self, x):
-        return self.value == x
+        return not self == x
+
