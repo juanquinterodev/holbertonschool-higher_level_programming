@@ -16,7 +16,7 @@ Non messages
     >>> matrix_divided = __import__('2-matrix_divided').matrix_divided
     >>> matrix1 = [[3.5, 2, 3], [4, 5, 6]]
     >>> matrix_divided(matrix1, 3)
-    [[1.16, 0.66, 1.0], [1.33, 1.66, 2.0]]
+    [[1.17, 0.67, 1.0], [1.33, 1.67, 2.0]]
     >>> matrix_divided(matrix1, 10)
     [[0.35, 0.2, 0.3], [0.4, 0.5, 0.6]]
     >>> matrix_divided(matrix1, -2)
@@ -41,7 +41,7 @@ floats
     Traceback (most recent call last):
     TypeError: div must be a number
 
-    >>> matrix_divided([[5, 56, 7]8, [12, 7, 66]], 0)
+    >>> matrix_divided([[5, 56, 7], [12, 7, 66]], 0)
     Traceback (most recent call last):
     ZeroDivisionError: division by zero
 
@@ -56,4 +56,4 @@ floats
 
     >>> matrix_divided()
     Traceback (most recent call last):
-    TypeError: matrix_divid
+    TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'
