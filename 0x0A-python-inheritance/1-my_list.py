@@ -1,8 +1,15 @@
 #!/usr/bin/python3
-class MyList(list):
+"""Inherit from list and print it
+    Args:
+        list (int): integer list
+"""
 
-    def __init__(self):
-        list.__init__(self)
+
+class MyList(list):
+    """Class that inherit
+    """
 
     def print_sorted(self):
+        """print the list sorted
+        """
         print(sorted(self))
