@@ -16,7 +16,6 @@ Strings
     >>> text_indentation = __import__('5-text_indentation').text_indentation
     >>> text_indentation("Hello")
     Hello
-    <BLANKLINE>
     >>> text_indentation('Z')
     Z
     >>> text_indentation('?')
@@ -58,4 +57,4 @@ Raise error message in differents cases
 
     >>> text_indentation()
     Traceback (most recent call last):
-    TypeError: text_indentation() missing 1 required
+    TypeError: text_indentation() missing 1 required positional argument: 'text'
