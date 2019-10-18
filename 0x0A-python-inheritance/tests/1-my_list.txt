@@ -62,7 +62,7 @@
     [1, 1, 1]
 
     
-    >>> my_list.print_sorted()
+    >>> My_list.print_sorted()
     Traceback (most recent call last):
     NameError: name list is not defined
 
