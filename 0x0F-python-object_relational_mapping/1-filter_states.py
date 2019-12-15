@@ -12,7 +12,7 @@ if __name__ == "__main__":
     database = sys.argv[3]
 
     db = MySQLdb.connect(host="localhost", port=3306, user=username,
-                        passwd=password, db=database)
+                         passwd=password, db=database)
 
     l = db.cursor()
     l.execute("SELECT * FROM states WHERE name LIKE BINARY 'N%' \
